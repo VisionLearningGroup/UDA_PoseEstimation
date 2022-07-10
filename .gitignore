@@ -1,0 +1,10 @@
+data
+jobs
+output_viz
+logs
+tb
+checkpoints
+__pycache__
+saved_models/*
+data_scc
+animal_data_scc
