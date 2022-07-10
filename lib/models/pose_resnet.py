@@ -6,7 +6,6 @@ Modified from https://github.com/microsoft/human-pose-estimation.pytorch
 import torch.nn as nn
 from .resnet import _resnet
 from .resnet import Bottleneck as Bottleneck_default
-from .transpose_r import *
 
 
 class Upsampling(nn.Sequential):
