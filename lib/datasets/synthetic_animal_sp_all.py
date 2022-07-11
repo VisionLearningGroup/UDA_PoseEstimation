@@ -1,7 +1,3 @@
-"""
-@author: Kaihong Wang
-@contact: kaiwkh@bu.edu
-"""
 from __future__ import print_function, absolute_import
 import os
 import numpy as np

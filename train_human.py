@@ -1,7 +1,3 @@
-"""
-@author: Kaihong Wang
-@contact: kaiwkh@bu.edu
-"""
 import random
 import time
 import warnings

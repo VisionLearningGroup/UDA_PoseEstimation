@@ -1,7 +1,3 @@
-"""
-@author: Kaihong Wang
-@contact: kaiwkh@bu.edu
-"""
 import os
 import json
 import tqdm
