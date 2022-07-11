@@ -1,18 +1,36 @@
-# UDA_PoseEstimation
-Code for [A Unified Framework for Domain Adaptive Pose Estimation](https://arxiv.org/pdf/2204.00172.pdf), accepted at ECCV 2022. 
+# [A Unified Framework for Domain Adaptive Pose Estimation, ECCV 2022](https://arxiv.org/pdf/2204.00172.pdf)
+Code for [A Unified Framework for Domain Adaptive Pose Estimation, ECCV 2022](https://arxiv.org/pdf/2204.00172.pdf) 
 
-<p align="center">
+[Donghyun Kim*](http://cs-people.bu.edu/donhk/), [Kaihong Wang*](https://cs-people.bu.edu/kaiwkh/), [Kate Saenko](http://ai.bu.edu/ksaenko.html), [Margrit Betke](https://www.cs.bu.edu/faculty/betke/), and [Stan Sclaroff](https://www.cs.bu.edu/fac/sclaroff/).
+
+# Introduction
+
+<p align="left">
   <img width="650" src="figures/sample.png">
 </p>
 
-# Introduction
+While several domain adaptive pose estimation models have been proposed recently, they are not generic but only focus on either human pose or animal pose estimation, and thus their effectiveness is somewhat limited to specific scenarios. In this work, we propose a unified framework that generalizes well on various domain adaptive pose estimation problems.
+
+# Method
 
 ![Image of Source](https://github.com/VisionLearningGroup/UDA_PoseEstimation/blob/master/figures/pipeline.png)
 
 We propose a unified freamwork for domain adaptive pose estimation on various objects including human body, human hand and animal that requires a (synthetic) labeled source domain dataset and a (real-world) target domain dataset **without** annotations. The system consists of a style trasnfer module to mitigate visual domain gap and a mean-teacher framework to encourage feature-level unsupervised learning from unlabeled images.
 For further details regarding our method, please refer to our [paper](https://arxiv.org/pdf/2204.00172.pdf).
 
+**Bibtex**
+```
+@InProceedings{kim2022unified,
+  title={A Unified Framework for Domain Adaptive Pose Estimation},
+  author={Kim, Donghyun and Wang, Kaihong and Saenko, Kate and Betke, Margrit and Sclaroff, Stan},
+  booktitle = {The European Conference on Computer Vision (ECCV)},
+  year = {2022} 
+ }
+```
+
 # Usage
+
+Our code is based on the implmentation of [RegDA](https://github.com/thuml/Transfer-Learning-Library/tree/master/examples/domain_adaptation/keypoint_detection), [UDA-Aniaml](https://github.com/chaneyddtt/UDA-Animal-Pose).
 
 **Data Preparation**
 
