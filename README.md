@@ -1,15 +1,48 @@
 # UDA_PoseEstimation
-Code for [A Unified Framework for Domain Adaptive Pose Estimation](https://arxiv.org/pdf/2204.00172.pdf), accepted at ECCV 2022
+Code for [A Unified Framework for Domain Adaptive Pose Estimation](https://arxiv.org/pdf/2204.00172.pdf), accepted at ECCV 2022. 
+
+<p align="center">
+  <img width="650" src="figures/sample.png">
+</p>
 
 # Introduction
+
+![Image of Source](https://github.com/VisionLearningGroup/UDA_PoseEstimation/blob/master/figures/pipeline.png)
+
+We propose a unified freamwork for domain adaptive pose estimation on various objects including human body, human hand and animal that requires a (synthetic) labeled source domain dataset and a (real-world) target domain dataset **without** annotations. The system consists of a style trasnfer module to mitigate visual domain gap and a mean-teacher framework to encourage feature-level unsupervised learning from unlabeled images.
+For further details regarding our method, please refer to our [paper](https://arxiv.org/pdf/2204.00172.pdf).
 
 # Usage
 
 **Data Preparation**
 
+**Human Dataset**
+
+As instructed by [RegDA](https://github.com/thuml/Transfer-Learning-Library/tree/master/examples/domain_adaptation/keypoint_detection), following datasets can be downloaded automatically:
+
+- [Rendered Handpose Dataset](https://lmb.informatik.uni-freiburg.de/resources/datasets/RenderedHandposeDataset.en.html)
+- [Hand-3d-Studio Dataset](https://www.yangangwang.com/papers/ZHAO-H3S-2020-02.html)
+- [FreiHAND Dataset](https://lmb.informatik.uni-freiburg.de/projects/freihand/)
+- [Surreal Dataset](https://www.di.ens.fr/willow/research/surreal/data/)
+- [LSP Dataset](http://sam.johnson.io/research/lsp.html)
+
+You need to prepare following datasets manually if you want to use them:
+- [Human3.6M Dataset](http://vision.imar.ro/human3.6m/description.php)
+
+**Aniaml Dataset**
+
+Following [UDA-Animal-Pose](https://github.com/chaneyddtt/UDA-Animal-Pose) and [CCSSL](https://github.com/JitengMu/Learning-from-Synthetic-Animals):
+- Create a `./animal_data` directory.
+- Download the synthetic dataset by running `bash get_dataset.sh`.
+- Download the [TigDog](http://calvin-vision.net/datasets/tigdog/) dataset and move folder behaviorDiscovery2.0 to `./animal_data/`.
+- Download a cleaned annotation file of the synthetic dataset for better time performance from [here](https://drive.google.com/file/d/1jpGD235mFsVixeVRpcqMzGcbXqUtOvAy/view?usp=sharing) and plac it under `./animal_data/`.
+- Download the [cropped images](https://drive.google.com/file/d/1qFX_H2o8_unFpADowjTOcGfr_SwKkuYg/view?usp=sharing) for the TigDog dataset and move the folder real_animal_crop_v4 to `./animal_data/`.
+
 **Pretrained Models**
 
 Before training, please make sure style transfer models are downloaded and saved in the "saved_models" folder under this directory. Pretrained models in all experiments are available [here](https://drive.google.com/drive/folders/1WVjQ2Hq1CrtUr3AOlq1PxDuY50KpZ8lh?usp=sharing). 
+
+# Experiments
 
 **UDA Human Pose Estimation**
 
