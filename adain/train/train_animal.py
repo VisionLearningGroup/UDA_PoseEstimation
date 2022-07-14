@@ -39,8 +39,8 @@ def adjust_learning_rate(optimizer, iteration_count):
 
 parser = argparse.ArgumentParser()
 # Basic options
-parser.add_argument('--source_root', type=str)
-parser.add_argument('--target_root', type=str)
+# parser.add_argument('--source_root', type=str)
+# parser.add_argument('--target_root', type=str)
 parser.add_argument('--vgg', type=str, default='models/vgg_normalised.pth')
 parser.add_argument('--image-size', type=int, default=256,
                     help='input image size')
