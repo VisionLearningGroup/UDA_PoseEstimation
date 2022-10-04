@@ -53,8 +53,7 @@ Following [UDA-Animal-Pose](https://github.com/chaneyddtt/UDA-Animal-Pose) and [
 - Create a `./animal_data` directory.
 - Download the synthetic dataset by running `bash get_dataset.sh`.
 - Download the [TigDog](http://calvin-vision.net/datasets/tigdog/) dataset and move folder behaviorDiscovery2.0 to `./animal_data/`.
-- Download a cleaned annotation file of the synthetic dataset for better time performance from [here](https://drive.google.com/file/d/1jpGD235mFsVixeVRpcqMzGcbXqUtOvAy/view?usp=sharing) and plac it under `./animal_data/`.
-- Download the [cropped images](https://drive.google.com/file/d/1qFX_H2o8_unFpADowjTOcGfr_SwKkuYg/view?usp=sharing) for the TigDog dataset and move the folder real_animal_crop_v4 to `./animal_data/`.
+- Download a cleaned annotation file of the synthetic dataset for better time performance from [here](https://drive.google.com/drive/folders/18Ot4RX0ilFma_EriPelkBjnCsn91C9xO?usp=sharing) and place it under `./animal_data/`.
 
 **Pretrained Models**
 
