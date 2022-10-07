@@ -114,3 +114,6 @@ python train_animal_other.py --image-path animal_data  --source synthetic_animal
 # Acknowledgment
 
 Code borrowed from [RegDA](https://github.com/thuml/Transfer-Learning-Library/tree/master/examples/domain_adaptation/keypoint_detection), [UDA-Aniaml](https://github.com/chaneyddtt/UDA-Animal-Pose) and [AdaIN](https://github.com/xunhuang1995/AdaIN-style).
+This work has been partially supported by the ONR MURI grant N00014-19-1-2571 associated with AUSMURIB000001
+
+
