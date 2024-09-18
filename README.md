@@ -57,7 +57,7 @@ Following [UDA-Animal-Pose](https://github.com/chaneyddtt/UDA-Animal-Pose) and [
 
 **Pretrained Models**
 
-Before training, please make sure style transfer models are downloaded and saved in the "saved_models" folder under this directory. Pretrained style transfer models in all experiments are available [here](https://drive.google.com/drive/folders/1WVjQ2Hq1CrtUr3AOlq1PxDuY50KpZ8lh?usp=sharing). 
+Before training, please make sure style transfer models are downloaded and saved in the "saved_models" folder under this directory. Pretrained style transfer models in all experiments are available [here](https://www.dropbox.com/scl/fi/yy2fvt8ajk3uqeg25mjae/saved_models.zip?rlkey=xcmaxur6jkkxi4797qtz3h7uz&st=tfp8ukq8&dl=0). 
 
 To pretrain a style transfer model on your own:
 1. Go to `./adain/` directory.
